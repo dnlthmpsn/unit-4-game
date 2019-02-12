@@ -1,14 +1,14 @@
 //Variables
 //============================================
 //Global Variables
-var scoreToGet [];
+var scoreToGet = [];
 var  gems = [1,2,3,4];
-var currentScore [];
-var gemValue= [];
+var currentScore = [];
+var gemValue = [];
 
 //Game Counter Variables
-var winCounter= [];
-var lossCounter= [];
+var winCounter = [];
+var lossCounter = [];
 
 
 
