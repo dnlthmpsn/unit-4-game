@@ -10,17 +10,72 @@
 <title>Groovy Gems</title>
 </head>
 <body>
+        <div class="d-flex align-items-center flex-column justify-content-center h-100  text-navy" id="header">
+                <h1 class="display-4">Groovy Gems.</h1>
 
-        <div class="jumbotron">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-              </div>
-    
+                <div class="accordion col-8" id="accordionExample">
+                        <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Game Rules/Instructions
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <!-- Game instructions to go here  -->
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Game Statistics
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <!-- statistics to go here -->
+                            </div>
+                        </div>
+                        </div>
+                <div class="row text-center mt-5">
+                    <div class="col-6 ">
+                        <span id="target"><h2>Target: 42</h2></span>
+                    </div>
+                    <div class="col-6">
+                        <span id="score"><h2>Score: 31</h2></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 pl-0">
+                        <img  src="./assets/images/gem1.png" height="200" width="250">
+                    </div>
+                    <div class="col-3">
+                            <img  src="./assets/images/gem1.png" height="200" width="250">
+                    </div>
+                    <div class="col-3">
+                            <img  src="./assets/images/gem1.png" height="200" width="250">
+                    </div>
+                    <div class="col-3">
+                            <img  src="./assets/images/gem1.png" height="200" width="250">
+                    </div>
+                </div>
 
- <script src="./assets/javascript/game.js"></script>
+                </div>
+                
+        </div>            
+            
+            
+                                  
+                                
+          
+
+
+<script src="./assets/javascript/game.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
