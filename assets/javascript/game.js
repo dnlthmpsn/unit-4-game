@@ -2,9 +2,9 @@
 //============================================
 //Global Variables
 var scoreToGet = [];
-var  gems = [1,2,3,4];
-var currentScore = [];
-var gemValue = [];
+var  gems = ["gem1", "gem2", "gem3", "gem4"];
+var currentScore= 0;
+var gemValues = [];
 
 //Game Counter Variables
 var winCounter= [];
@@ -17,10 +17,21 @@ var lossCounter= [];
 
 function init(){
     //generate random score to get between 19-120
+    scoreToGet = Math.floor((Math.random() * 102) + 19);
+
     //generate random values for each gem between 1-12
+    for (i =0; i < gems.length; i++){
+        gemValues.push(Math.floor((Math.random() * 12) + 1));
+        
+    }
+
     //set win counter and loss counter to 0
     //set users current score to 0
     //render everything that needs to be rendered.. using magical jQuery
+
+    //building and debugging
+    console.log(scoreToGet);
+    console.log(gemValues);
 }
 
 function reset() {
@@ -32,8 +43,29 @@ function reset() {
 
 //Main Process
 //============================================
-
 //set listeners for each of the gem buttons 
+$("#gem1").on("click", function(){  
+    currentScore = currentScore + gemValues[0];
+    console.log(currentScore);
+});
+
+$("#gem2").on("click", function(){
+    currentScore = currentScore + gemValues[1];
+    console.log(currentScore);
+});
+
+$("#gem3").on("click", function(){
+    currentScore = currentScore + gemValues[2];
+    console.log(currentScore);
+});
+
+$("#gem4").on("click", function(){
+    currentScore = currentScore + gemValues[3];
+    console.log(currentScore);
+});
+
+init();
+
 //when a gem is clicked add that gems value to the users current score
 //if else if for score matching and exceeding the score to get
 
