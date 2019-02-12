@@ -4,15 +4,11 @@
 var scoreToGet = [];
 var  gems = [1,2,3,4];
 var currentScore = [];
-<<<<<<< HEAD
 var gemValue = [];
-=======
-var gemValue= [];
->>>>>>> Feb12
 
 //Game Counter Variables
-var winCounter = [];
-var lossCounter = [];
+var winCounter= [];
+var lossCounter= [];
 
 
 
