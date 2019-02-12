@@ -7,8 +7,8 @@ var currentScore= 0;
 var gemValues = [];
 
 //Game Counter Variables
-var winCounter= [];
-var lossCounter= [];
+var winCounter;
+var lossCounter;
 
 
 
@@ -16,22 +16,30 @@ var lossCounter= [];
 //============================================
 
 function init(){
+    //Prompt the user for a username
+   var userName = prompt("Hey Groovy human, what do you want to be called?");
+
+    //update playername 
+    $("#userName").html(userName);
+
+
     //generate random score to get between 19-120
     scoreToGet = Math.floor((Math.random() * 102) + 19);
 
     //generate random values for each gem between 1-12
     for (i =0; i < gems.length; i++){
-        gemValues.push(Math.floor((Math.random() * 12) + 1));
-        
+        gemValues.push(Math.floor((Math.random() * 12) + 1));   
     }
 
-    //set win counter and loss counter to 0
-    //set users current score to 0
+    //render target score and user score
+    $("#target").html(scoreToGet);
+    $("#score").html(currentScore);
     //render everything that needs to be rendered.. using magical jQuery
 
     //building and debugging
     console.log(scoreToGet);
     console.log(gemValues);
+    console.log(userName);
 }
 
 function reset() {
