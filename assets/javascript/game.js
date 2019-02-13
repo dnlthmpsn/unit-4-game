@@ -11,8 +11,6 @@ var userName = [];
 var winCounter = 0;
 var lossCounter = 0;
 
-
-
 //Functions
 //============================================
 function generateRandomTarget(){
@@ -25,7 +23,6 @@ function generateGemValues(){
             gemValues.push(Math.floor((Math.random() * 12) + 1));   
     }
 }
-
 
 function init(){
     //Prompt the user for a username
@@ -41,8 +38,6 @@ function init(){
     $("#target").html(scoreToGet);
     $("#score").html(currentScore);
 
-
-    //render everything that needs to be rendered.. using magical jQuery
     //building and debugging
     console.log(scoreToGet);
     console.log(gemValues);
@@ -58,7 +53,6 @@ function reset(){
 
 }
     
-
 function winOrLose(){
     if(scoreToGet === currentScore){
         alert("groovy " + userName + ", looks like you won. Play again?");
@@ -74,10 +68,6 @@ function winOrLose(){
 
 }
     
-
-
-
-
 //Main Process
 //============================================
 //set listeners for each of the gem buttons 
@@ -112,15 +102,8 @@ $("#gem4").on("click", function(){
     winOrLose();
 });
 
-
-
-
-
 init();
 
-
-//when a gem is clicked add that gems value to the users current score
-//if else if for score matching and exceeding the score to get
 
 
 
